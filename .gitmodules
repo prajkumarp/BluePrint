@@ -1,0 +1,3 @@
+[submodule "Hub/Frameworks/AppComponentPOC"]
+	path = Hub/Frameworks/AppComponentPOC
+	url = https://prajkumarp@github.com/prajkumarp/AppComponentPOC.git
