@@ -7,7 +7,7 @@
 //
 
 #import "DetailViewController.h"
-
+#import <App1/App1.h>
 @interface DetailViewController ()
 
 @end
@@ -41,6 +41,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)flow1ButtonClicked:(id)sender{
+    NSLog(@"Push it buddy");
+    Class vcClass = NSClassFromString(@"ViewController2");
+    NSBundle* resourcesBundle = [NSBundle bundleForClass:vcClass];
+    UIViewController *vc2 = [[vcClass alloc] init];
+    [[self navigationController] pushViewController:vc2 animated:YES];
 }
 
 @end

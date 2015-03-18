@@ -15,6 +15,8 @@
 		130AB69E1AB9FCF20001BFF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130AB69D1AB9FCF20001BFF1 /* Images.xcassets */; };
 		130AB6A11AB9FCF20001BFF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 130AB69F1AB9FCF20001BFF1 /* LaunchScreen.xib */; };
 		130AB6AD1AB9FCF30001BFF1 /* HubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 130AB6AC1AB9FCF30001BFF1 /* HubTests.m */; };
+		130AB6BB1ABA011B0001BFF1 /* App1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130AB6B61AB9FFB40001BFF1 /* App1.framework */; };
+		130AB6BC1ABA011B0001BFF1 /* App1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 130AB6B61AB9FFB40001BFF1 /* App1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36CE83BFDAD146868242631C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB285D0C9D00B2732BCA96F3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,20 @@
 			remoteInfo = Hub;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		130AB6BD1ABA011B0001BFF1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				130AB6BC1ABA011B0001BFF1 /* App1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		130AB68A1AB9FCF20001BFF1 /* Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +60,7 @@
 		130AB6A61AB9FCF30001BFF1 /* HubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		130AB6AB1AB9FCF30001BFF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		130AB6AC1AB9FCF30001BFF1 /* HubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HubTests.m; sourceTree = "<group>"; };
+		130AB6B61AB9FFB40001BFF1 /* App1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App1.framework; path = "FrameworkLibs/Debug-iphonesimulator/App1.framework"; sourceTree = "<group>"; };
 		19ADEC74EFA0BD9A677699A6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D006D3DD87B3A934FD6D23D5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DB285D0C9D00B2732BCA96F3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				130AB6BB1ABA011B0001BFF1 /* App1.framework in Frameworks */,
 				36CE83BFDAD146868242631C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +161,7 @@
 		EB1A6180399B3BF645542F08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				130AB6B61AB9FFB40001BFF1 /* App1.framework */,
 				DB285D0C9D00B2732BCA96F3 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -160,6 +179,7 @@
 				130AB6871AB9FCF20001BFF1 /* Frameworks */,
 				130AB6881AB9FCF20001BFF1 /* Resources */,
 				420A31720D697CB155E5AED4 /* Copy Pods Resources */,
+				130AB6BD1ABA011B0001BFF1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,6 +431,10 @@
 			baseConfigurationReference = D006D3DD87B3A934FD6D23D5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FrameworkLibs/Debug-iphonesimulator",
+				);
 				INFOPLIST_FILE = Hub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,6 +446,10 @@
 			baseConfigurationReference = 19ADEC74EFA0BD9A677699A6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FrameworkLibs/Debug-iphonesimulator",
+				);
 				INFOPLIST_FILE = Hub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
