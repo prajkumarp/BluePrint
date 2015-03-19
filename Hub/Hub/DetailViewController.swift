@@ -8,9 +8,11 @@
 
 import UIKit
 
+
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var flow1Button: UIButton!
 
 
     var detailItem: AnyObject? {
@@ -27,6 +29,7 @@ class DetailViewController: UIViewController {
                 label.text = detail.description
             }
         }
+        
     }
 
     override func viewDidLoad() {
@@ -40,6 +43,10 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBAction func flow1ButtonCliked(sender : AnyObject) {
+       NSLog("Test")
+    }
 
 }
 

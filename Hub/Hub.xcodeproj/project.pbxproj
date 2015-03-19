@@ -15,6 +15,7 @@
 		130AB6D61ABA0B3D0001BFF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130AB6D51ABA0B3D0001BFF1 /* Images.xcassets */; };
 		130AB6D91ABA0B3D0001BFF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 130AB6D71ABA0B3D0001BFF1 /* LaunchScreen.xib */; };
 		130AB6E51ABA0B3D0001BFF1 /* HubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130AB6E41ABA0B3D0001BFF1 /* HubTests.swift */; };
+		13CE59A71ABA1CCD007EFE74 /* DDLogWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CE59A61ABA1CCD007EFE74 /* DDLogWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,10 @@
 		130AB6DE1ABA0B3D0001BFF1 /* HubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		130AB6E31ABA0B3D0001BFF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		130AB6E41ABA0B3D0001BFF1 /* HubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubTests.swift; sourceTree = "<group>"; };
+		130AB6EE1ABA0CCA0001BFF1 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		130AB6EF1ABA108D0001BFF1 /* Hub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hub-Bridging-Header.h"; sourceTree = "<group>"; };
+		13CE59A51ABA1CCD007EFE74 /* DDLogWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogWrapper.h; sourceTree = "<group>"; };
+		13CE59A61ABA1CCD007EFE74 /* DDLogWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLogWrapper.m; sourceTree = "<group>"; };
 		2F2F644FB0DC5126BF1C1466 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		85196871C5DD9742DEFD44B9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EA7C33FACE75990432CCAAFA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +71,10 @@
 		130AB6BE1ABA0B3D0001BFF1 = {
 			isa = PBXGroup;
 			children = (
+				13CE59A51ABA1CCD007EFE74 /* DDLogWrapper.h */,
+				13CE59A61ABA1CCD007EFE74 /* DDLogWrapper.m */,
+				130AB6EF1ABA108D0001BFF1 /* Hub-Bridging-Header.h */,
+				130AB6EE1ABA0CCA0001BFF1 /* MyPlayground.playground */,
 				130AB6C91ABA0B3D0001BFF1 /* Hub */,
 				130AB6E11ABA0B3D0001BFF1 /* HubTests */,
 				130AB6C81ABA0B3D0001BFF1 /* Products */,
@@ -274,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CE59A71ABA1CCD007EFE74 /* DDLogWrapper.m in Sources */,
 				130AB6D11ABA0B3D0001BFF1 /* DetailViewController.swift in Sources */,
 				130AB6CF1ABA0B3D0001BFF1 /* MasterViewController.swift in Sources */,
 				130AB6CD1ABA0B3D0001BFF1 /* AppDelegate.swift in Sources */,
@@ -402,9 +412,12 @@
 			baseConfigurationReference = 2F2F644FB0DC5126BF1C1466 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Hub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hub-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -413,9 +426,11 @@
 			baseConfigurationReference = 85196871C5DD9742DEFD44B9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Hub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hub-Bridging-Header.h";
 			};
 			name = Release;
 		};
