@@ -16,7 +16,10 @@
 	</dict>
 	<key>Profiles</key>
 	<array>
-		<array/>
+		<string>QA1</string>
+		<string>QA2</string>
+		<string>Store</string>
+		<string>Manager</string>
 	</array>
 </dict>
 </plist>

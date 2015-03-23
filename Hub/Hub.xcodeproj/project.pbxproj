@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		06B94BEE7F4EB11E6450583B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7C33FACE75990432CCAAFA /* libPods.a */; };
 		130AB6CD1ABA0B3D0001BFF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130AB6CC1ABA0B3D0001BFF1 /* AppDelegate.swift */; };
-		130AB6CF1ABA0B3D0001BFF1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130AB6CE1ABA0B3D0001BFF1 /* MasterViewController.swift */; };
-		130AB6D11ABA0B3D0001BFF1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130AB6D01ABA0B3D0001BFF1 /* DetailViewController.swift */; };
 		130AB6D41ABA0B3D0001BFF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130AB6D21ABA0B3D0001BFF1 /* Main.storyboard */; };
 		130AB6D61ABA0B3D0001BFF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130AB6D51ABA0B3D0001BFF1 /* Images.xcassets */; };
 		130AB6D91ABA0B3D0001BFF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 130AB6D71ABA0B3D0001BFF1 /* LaunchScreen.xib */; };
 		130AB6E51ABA0B3D0001BFF1 /* HubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130AB6E41ABA0B3D0001BFF1 /* HubTests.swift */; };
+		132DF4551AC045FA0098E673 /* Navigation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 132DF4541AC045FA0098E673 /* Navigation.plist */; };
+		132DF4591AC046050098E673 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132DF4571AC046050098E673 /* DetailViewController.swift */; };
+		132DF45A1AC046050098E673 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132DF4581AC046050098E673 /* MasterViewController.swift */; };
+		132DF45C1AC046710098E673 /* QA1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 132DF45B1AC046710098E673 /* QA1.plist */; };
+		132DF45E1AC046B70098E673 /* QA2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 132DF45D1AC046B70098E673 /* QA2.plist */; };
 		13CE59A71ABA1CCD007EFE74 /* DDLogWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CE59A61ABA1CCD007EFE74 /* DDLogWrapper.m */; };
 /* End PBXBuildFile section */
 
@@ -32,8 +35,6 @@
 		130AB6C71ABA0B3D0001BFF1 /* Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		130AB6CB1ABA0B3D0001BFF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		130AB6CC1ABA0B3D0001BFF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		130AB6CE1ABA0B3D0001BFF1 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		130AB6D01ABA0B3D0001BFF1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		130AB6D31ABA0B3D0001BFF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		130AB6D51ABA0B3D0001BFF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		130AB6D81ABA0B3D0001BFF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -42,6 +43,11 @@
 		130AB6E41ABA0B3D0001BFF1 /* HubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubTests.swift; sourceTree = "<group>"; };
 		130AB6EE1ABA0CCA0001BFF1 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		130AB6EF1ABA108D0001BFF1 /* Hub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hub-Bridging-Header.h"; sourceTree = "<group>"; };
+		132DF4541AC045FA0098E673 /* Navigation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Navigation.plist; sourceTree = "<group>"; };
+		132DF4571AC046050098E673 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		132DF4581AC046050098E673 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		132DF45B1AC046710098E673 /* QA1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QA1.plist; sourceTree = "<group>"; };
+		132DF45D1AC046B70098E673 /* QA2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QA2.plist; sourceTree = "<group>"; };
 		13CE59A51ABA1CCD007EFE74 /* DDLogWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogWrapper.h; sourceTree = "<group>"; };
 		13CE59A61ABA1CCD007EFE74 /* DDLogWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLogWrapper.m; sourceTree = "<group>"; };
 		2F2F644FB0DC5126BF1C1466 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,9 +101,8 @@
 		130AB6C91ABA0B3D0001BFF1 /* Hub */ = {
 			isa = PBXGroup;
 			children = (
+				132DF4561AC046050098E673 /* ViewControllers */,
 				130AB6CC1ABA0B3D0001BFF1 /* AppDelegate.swift */,
-				130AB6CE1ABA0B3D0001BFF1 /* MasterViewController.swift */,
-				130AB6D01ABA0B3D0001BFF1 /* DetailViewController.swift */,
 				130AB6D21ABA0B3D0001BFF1 /* Main.storyboard */,
 				130AB6D51ABA0B3D0001BFF1 /* Images.xcassets */,
 				130AB6D71ABA0B3D0001BFF1 /* LaunchScreen.xib */,
@@ -109,6 +114,7 @@
 		130AB6CA1ABA0B3D0001BFF1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				132DF4531AC045FA0098E673 /* Profiles */,
 				130AB6CB1ABA0B3D0001BFF1 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -129,6 +135,25 @@
 				130AB6E31ABA0B3D0001BFF1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		132DF4531AC045FA0098E673 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				132DF4541AC045FA0098E673 /* Navigation.plist */,
+				132DF45B1AC046710098E673 /* QA1.plist */,
+				132DF45D1AC046B70098E673 /* QA2.plist */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		132DF4561AC046050098E673 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				132DF4571AC046050098E673 /* DetailViewController.swift */,
+				132DF4581AC046050098E673 /* MasterViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		71FE151D84610689B146C9AB /* Frameworks */ = {
@@ -232,7 +257,10 @@
 			files = (
 				130AB6D41ABA0B3D0001BFF1 /* Main.storyboard in Resources */,
 				130AB6D91ABA0B3D0001BFF1 /* LaunchScreen.xib in Resources */,
+				132DF4551AC045FA0098E673 /* Navigation.plist in Resources */,
+				132DF45C1AC046710098E673 /* QA1.plist in Resources */,
 				130AB6D61ABA0B3D0001BFF1 /* Images.xcassets in Resources */,
+				132DF45E1AC046B70098E673 /* QA2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +311,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132DF45A1AC046050098E673 /* MasterViewController.swift in Sources */,
+				132DF4591AC046050098E673 /* DetailViewController.swift in Sources */,
 				13CE59A71ABA1CCD007EFE74 /* DDLogWrapper.m in Sources */,
-				130AB6D11ABA0B3D0001BFF1 /* DetailViewController.swift in Sources */,
-				130AB6CF1ABA0B3D0001BFF1 /* MasterViewController.swift in Sources */,
 				130AB6CD1ABA0B3D0001BFF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
