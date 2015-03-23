@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Default</key>
+	<dict>
+		<key>Environment</key>
+		<dict>
+			<key>URL1</key>
+			<string></string>
+		</dict>
+		<key>LaunchImage</key>
+		<string></string>
+		<key>RequiresAuthentication</key>
+		<false/>
+	</dict>
+	<key>Profiles</key>
+	<array>
+		<array/>
+	</array>
+</dict>
+</plist>
