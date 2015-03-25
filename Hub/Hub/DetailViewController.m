@@ -8,6 +8,9 @@
 
 #import "DetailViewController.h"
 #import <App1/App1.h>
+#import <CacheLib/cacheManager.h>
+
+
 @interface DetailViewController ()
 
 @end
@@ -58,6 +61,16 @@
 }
 
 - (IBAction)flow1ButtonClicked:(id)sender{
+    
+    cacheManager *cacheInstance = [cacheManager sharedInstance];
+    
+    NSBundle *bundle = [NSBundle bundleWithIdentifier:@"L-Brands.CacheLib"];
+    NSURL *url = [bundle URLForResource:@"cachelib" withExtension:@"momd"];
+    cacheInstance.managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:url];
+    
+    
+    
+    [cacheInstance setData:@"Value from shell" forKey:@"Value"];
     
     if (controller1) {
         [self presentViewController:controller1 animated:YES completion:NULL];
