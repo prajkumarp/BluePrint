@@ -1,3 +1,6 @@
 [submodule "Hub/Frameworks/AppComponentPOC"]
 	path = Hub/Frameworks/AppComponentPOC
 	url = https://prajkumarp@github.com/prajkumarp/AppComponentPOC.git
+[submodule "Hub/Frameworks/CacheLib"]
+	path = Hub/Frameworks/CacheLib
+	url = https://prajkumarp@github.com/prajkumarp/CacheLib.git
