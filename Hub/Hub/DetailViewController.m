@@ -36,7 +36,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showHome:)
+                                                 name:@"ShowHome"
+                                               object:nil];
 }
+
+
+- (void) showHome:(NSNotification *) notification
+{
+    if ([[notification name] isEqualToString:@"ShowHome"])
+        NSLog (@"Successfully received the test notification!");
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -44,11 +58,16 @@
 }
 
 - (IBAction)flow1ButtonClicked:(id)sender{
-    NSLog(@"Push it buddy");
-    Class vcClass = NSClassFromString(@"ViewController2");
-    NSBundle* resourcesBundle = [NSBundle bundleForClass:vcClass];
-    UIViewController *vc2 = [[vcClass alloc] init];
-    [[self navigationController] pushViewController:vc2 animated:YES];
+    
+    if (controller1) {
+        [self presentViewController:controller1 animated:YES completion:NULL];
+    }else{
+        NSLog(@"Push it buddy");
+        Class vcClass = NSClassFromString(@"ViewController2");
+        UIViewController *vc2 = [[vcClass alloc] init];
+        controller1 = [[UINavigationController alloc] initWithRootViewController:vc2];
+        [self presentViewController:controller1 animated:YES completion:NULL];
+    }
 }
 
 @end

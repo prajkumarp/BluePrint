@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController{
+    UINavigationController *controller1;
+}
 
 @property (strong, nonatomic) id detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
